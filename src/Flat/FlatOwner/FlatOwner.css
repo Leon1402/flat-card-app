@@ -1,0 +1,10 @@
+.flat__owner {
+  width: 100%;
+  padding: 5px;
+  transform: translateX(150%);
+  transition: transform .3s ease-out;
+}
+
+.flat__owner_active {
+  transform: translateX(-100%);
+}

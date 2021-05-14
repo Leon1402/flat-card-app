@@ -1,0 +1,50 @@
+.flat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  padding: 20px;
+  padding-top: 230px;
+  box-sizing: border-box;
+  background-image: url(../res/main-bosfor.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(8, 112, 184, 0.7);
+  box-shadow: 0 20px 50px rgba(8, 112, 184, 0.7);
+  transition: box-shadow .3s ease-out;
+  border-radius: 10px;
+  color: #eee;
+
+  overflow: hidden;
+}
+
+.flat__content {
+  display: flex;
+  width: 200%;
+  margin-bottom: 20px;
+}
+
+.flat__title {
+  width: 100%;
+  min-height: 60px;
+  margin: 0;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.flat:hover,
+.flat_active {
+  box-shadow: 0 20px 50px #F55;
+}
+
+.flat__like {
+  cursor: pointer;
+  font-size: 30px;
+  transition: color .3s ease-out;
+}
+
+.flat__like_active,
+.flat__like:hover {
+  color: #F55;
+}

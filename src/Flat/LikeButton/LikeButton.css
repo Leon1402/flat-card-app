@@ -1,0 +1,10 @@
+.flat__like {
+  cursor: pointer;
+  font-size: 30px;
+  transition: color .3s ease-out;
+}
+
+.flat__like_active,
+.flat__like:hover {
+  color: #F55;
+}
