@@ -7,28 +7,32 @@ export const FlatInfo = ({ flat, activeState }) => {
   const info = flat.attributes;
   return (
     <div className={activeState === ACTIVE_STATE.flat
-      ? 'flat__info info flat__info_active'
+      ? 'flat__info info info_active'
       : 'flat__info info'}>
-      Информация о квартире
-      <div className="flat__area">Площадь: {info.area} {info.unit}</div>
-      <div className="flat__rooms">Количество комнат: {info.rooms}</div>
-      <div className="flat__address address">
-        <div className="address__item">
-          Город: {info.address.city}
-        </div>
-        <div className="address__item">
-          Улица: {info.address.street}
-        </div>
-        <div className="address__item">
-          Дом: {info.address.house}
-        </div>
-        <div className="address__item">
-          Квартира: {info.address.room}
-        </div>
+      <h3 className='info__title'>Информация о квартире</h3>
+      <p className="info__area">
+        <b>Площадь:</b> {info.area} {info.unit}
+        </p>
+      <p className="info__rooms">
+        <b>Количество комнат:</b> {info.rooms}
+        </p>
+      <div className="info__address address">
+        <p className="address__item">
+          <b>Город:</b> {info.address.city}
+        </p>
+        <p className="address__item">
+          <b>Улица:</b> {info.address.street}
+        </p>
+        <p className="address__item">
+          <b>Дом:</b> {info.address.house}
+        </p>
+        <p className="address__item">
+          <b>Квартира:</b> {info.address.room}
+        </p>
       </div>
-      <div className="flat__type">
-        Вид жилья: {flat.type}
-      </div>
+      <p className="info__type">
+        <b>Вид жилья:</b> {flat.type}
+      </p>
     </div>
   )
 }

@@ -18,4 +18,9 @@ button {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  color: inherit;
+}
+
+p {
+  margin: 5px 0;
 }

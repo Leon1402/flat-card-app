@@ -1,10 +1,14 @@
 .flat__like {
+  text-align: right;
   cursor: pointer;
   font-size: 30px;
   transition: color .3s ease-out;
 }
 
-.flat__like_active,
-.flat__like:hover {
+.flat__like_active {
   color: #F55;
+}
+
+.flat__like:hover {
+  animation: hoverAnimation .5s ease-out  alternate infinite;
 }

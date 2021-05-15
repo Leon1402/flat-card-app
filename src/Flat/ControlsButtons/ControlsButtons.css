@@ -1,16 +1,24 @@
 .flat__buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .flat__button {
-  width: 45%;
+  flex: 0 0 45%;
+  margin-bottom: 10px;
   border: 2px solid #f55;
   border-radius: 10px;
   transition: background-color .3s ease-out;
 }
 
-.flat__button:hover,
+
 .flat__button_active {
   background-color: #f55;
+}
+
+.flat__button:hover {
+  animation: hoverAnimation .5s ease-out  alternate infinite;
+
 }

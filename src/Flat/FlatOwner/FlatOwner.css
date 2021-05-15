@@ -5,6 +5,10 @@
   transition: transform .3s ease-out;
 }
 
+.owner__title {
+  margin: 0;
+}
+
 .flat__owner_active {
   transform: translateX(-100%);
 }
